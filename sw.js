@@ -17,8 +17,8 @@ const ASSETS = [
   "zakat.js",
   "settings.js",
 
-  "icons/icon-192.png",
-  "icons/icon-512.png"
+  "icons/wallet-icon-192.png",
+  "icons/wallet-icon-512.png"
 ];
 
 // تثبيت الكاش لأول مرة
@@ -59,4 +59,5 @@ self.addEventListener("activate", event => {
     )
   );
 });
+
 
