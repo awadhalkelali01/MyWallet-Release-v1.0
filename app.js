@@ -3,7 +3,7 @@
 // الدوال: getAllData, convertToYER, currentRates, waitForRates, showNotification
 // مُحمّلة مسبقاً من db_logic.js
 
-const showDuration = 3500; 
+const showDuration = 100; 
 const cards = Array.from(document.querySelectorAll('.card'));
 const updateLink = document.getElementById('updateLink');
 
@@ -114,3 +114,4 @@ async function updateLastUpdateLabels() {
         console.error("Update label error", e);
     }
 }
+
