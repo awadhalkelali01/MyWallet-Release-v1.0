@@ -1,4 +1,4 @@
-const CACHE_NAME = "mywallet-cache-v1";
+const CACHE_NAME = "mywallet-cache-v2";
 
 // الملفات التي سيتم تخزينها Offline
 const ASSETS = [
@@ -59,3 +59,4 @@ self.addEventListener("activate", event => {
     )
   );
 });
+
