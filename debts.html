@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>إدارة الديون</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2 class="page-title">إدارة الديون 💳</h2>
+
+        <!-- البطاقات العلوية (بدون تغيير) -->
+        <div class="summary-grid">
+
+            <div class="card summary-card" style="opacity:1; transform:none;">
+                <h3 class="card-title">دين مستحق عليك (خصم)</h3>
+                <p class="card-amount" id="total-owed-by-me-yer">YER 0</p>
+                <p class="card-note">المبلغ الإجمالي المستحق للآخرين.</p>
+            </div>
+
+            <div class="card summary-card" style="opacity:1; transform:none;">
+                <h3 class="card-title">دين مستحق لك (أصل)</h3>
+                <p class="card-amount" id="total-owed-to-me-yer">YER 0</p>
+                <p class="card-note">المبلغ الإجمالي الذي تستحقه من الآخرين.</p>
+            </div>
+
+        </div>
+
+        <!-- نموذج إضافة الدين (عرض كامل) -->
+        <div class="card form-full" id="newDebtCard" style="opacity:1; transform:none;">
+
+            <h3 class="card-title">➕ إضافة دين جديد</h3>
+
+            <form id="debtForm">
+
+                <div class="input-group">
+                    <label>نوع الدين</label>
+                    <select id="debtType" class="styled-select" required>
+                        <option value="owed_to_me">دين مستحق لك (أصل)</option>
+                        <option value="owed_by_me">دين مستحق عليك (خصم)</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>اسم الجهة/الشخص</label>
+                    <input type="text" id="debtName" placeholder="مثال: دين من صديق أو لي عند شركة" required>
+                </div>
+
+                <div class="input-group">
+                    <label>قيمة الدين</label>
+                    <input type="number" id="debtValue" placeholder="القيمة" required>
+                </div>
+
+                <div class="input-group">
+                    <label>عملة الدين</label>
+                    <select id="debtCurrency" class="styled-select">
+                        <option value="YER">ريال يمني (YER)</option>
+                        <option value="SAR">ريال سعودي (SAR)</option>
+                        <option value="USD">دولار أمريكي (USD)</option>
+                    </select>
+                </div>
+
+                <button class="btn primary" style="width:100%; margin-top:10px;">
+                    💾 حفظ الدين
+                </button>
+
+            </form>
+        </div>
+
+        <!-- قائمة الديون (عرض كامل) -->
+        <h3 class="page-subtitle">قائمة الديون المفصّلة</h3>
+
+        <div class="debts-list-container full-width">
+            <div id="debtsList"></div>
+        </div>
+
+    </div>
+<!-- شريط التنقل السفلي -->
+<nav class="bottom-nav">
+    <a href="index.html"><span class="icon">🏠</span><span>الرئيسية</span></a>
+    <a href="banks.html"><span class="icon">📊</span><span>الأصول</span></a>
+    <a href="gold.html"><span class="icon">💎</span><span>الذهب</span></a>
+    <a href="zakat.html"><span class="icon">🕌</span><span>الزكاة</span></a>
+    <a href="debts.html" class="active"><span class="icon">💳</span><span>الديون</span></a>
+    <a href="backup.html"><span class="icon">📦</span><span>النسخ الاحتياطية</span></a>
+    <a href="settings.html"><span class="icon">⚙️</span><span>الإعدادات</span></a>
+</nav>
+
+    <script src="core_logic.js"></script>
+    <script src="debts.js"></script>
+
+</body>
+</html>

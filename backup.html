@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>النسخ الاحتياطية — محفظتي</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="backups">
+<div class="notification-container"></div>
+
+<main class="container">
+    <h1 class="page-title">📦 إدارة النسخ الاحتياطية</h1>
+
+    <button class="btn primary" id="createBackupBtn">➕ إنشاء نسخة جديدة</button>
+
+    <ul id="backupList" class="list-container" style="margin-top:25px;"></ul>
+</main>
+
+<!-- شريط التنقل السفلي -->
+<nav class="bottom-nav">
+    <a href="index.html"><span class="icon">🏠</span><span>الرئيسية</span></a>
+    <a href="banks.html"><span class="icon">📊</span><span>الأصول</span></a>
+    <a href="gold.html"><span class="icon">💎</span><span>الذهب</span></a>
+    <a href="zakat.html"><span class="icon">🕌</span><span>الزكاة</span></a>
+    <a href="debts.html"><span class="icon">💳</span><span>الديون</span></a>
+    <a href="backup.html" class="active"><span class="icon">📦</span><span>النسخ الاحتياطية</span></a>
+    <a href="settings.html"><span class="icon">⚙️</span><span>الإعدادات</span></a>
+</nav>
+
+<script src="core_logic.js"></script>
+<script src="backups.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>محفظتي — حساب الزكاة</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="notification-container"></div>
+  <header class="app-header">🕌 حساب الزكاة</header>
+  
+  <main class="container">
+    <h1 class="page-title">حساب زكاة المال</h1>
+
+    <div class="zakat-summary">
+        <h2>📊 ملخص الأرصدة</h2>
+        <div class="summary-item">
+            <span>إجمالي الأصول (بالـ YER):</span> 
+            <strong id="total-assets-yer">— YER</strong>
+        </div>
+        <div class="summary-item">
+            <span>إجمالي الديون المستحقة عليّ (بالـ YER):</span> 
+            <strong id="total-debts-by-me-yer">— YER</strong>
+        </div>
+        <div class="summary-item total-net">
+            <span>صافي الأصول القابل للزكاة (بالـ YER):</span> 
+            <strong id="net-assets-yer">— YER</strong>
+        </div>
+    </div>
+
+    <div class="zakat-result">
+        <h2>💰 نتيجة حساب الزكاة</h2>
+        <div class="result-item">
+            <span>نصاب الزكاة الحالي (85 جرام ذهب):</span> 
+            <strong id="nisaab-yer">— YER</strong>
+        </div>
+        <div class="result-item final-result">
+            <span>الزكاة المستحقة عليك (2.5%):</span> 
+            <strong id="zakat-due-yer">— YER</strong>
+        </div>
+        <div class="zakat-status" id="zakat-status">
+            </div>
+    </div>
+    
+  </main>
+<!-- شريط التنقل السفلي -->
+<nav class="bottom-nav">
+    <a href="index.html"><span class="icon">🏠</span><span>الرئيسية</span></a>
+    <a href="banks.html"><span class="icon">📊</span><span>الأصول</span></a>
+    <a href="gold.html"><span class="icon">💎</span><span>الذهب</span></a>
+    <a href="zakat.html" class="active"><span class="icon">🕌</span><span>الزكاة</span></a>
+    <a href="debts.html"><span class="icon">💳</span><span>الديون</span></a>
+    <a href="backup.html"><span class="icon">📦</span><span>النسخ الاحتياطية</span></a>
+    <a href="settings.html"><span class="icon">⚙️</span><span>الإعدادات</span></a>
+</nav>  
+
+
+  <script src="core_logic.js"></script> 
+  <script src="zakat.js"></script>
+</body>
+</html>
